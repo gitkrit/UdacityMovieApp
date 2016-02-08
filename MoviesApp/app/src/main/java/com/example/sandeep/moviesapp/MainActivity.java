@@ -60,13 +60,13 @@ public class MainActivity extends ActionBarActivity {
 
       if (id == R.id.sort_by_pop) {
           MainActivityFragment fragment = (MainActivityFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
-          fragment.getURL("http://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=46a246a1cf3d49a43ebdf812fa43f183");
+          fragment.getURL("http://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=[Your_api_key]");
           return true;
         }
 
         if (id == R.id.sort_by_rat) {
             MainActivityFragment fragment = (MainActivityFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
-            fragment.getURL("http://api.themoviedb.org/3/discover/movie?sort_by=vote_count.desc&api_key=46a246a1cf3d49a43ebdf812fa43f183");
+            fragment.getURL("http://api.themoviedb.org/3/discover/movie?sort_by=vote_count.desc&api_key=[Your_api_key]");
             return true;
         }
 

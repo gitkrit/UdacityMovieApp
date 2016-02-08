@@ -51,7 +51,7 @@ public class MainActivityFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
         /*Http Connection*/
-         url="http://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=46a246a1cf3d49a43ebdf812fa43f183";
+         url="http://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=[Your_api_key]";
          new JSONTask().execute(url);
         /*http connection finish */
 
